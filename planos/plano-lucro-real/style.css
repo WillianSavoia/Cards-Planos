@@ -1,0 +1,185 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #EEEEF2;
+
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container .Header{
+    
+    width: 80%;
+}
+
+.container .Header .info{
+    height: 10%;
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 25%;
+}
+
+.container .formulary{
+  height: 25rem;
+  width: 70%;
+  
+  
+}
+
+.container .formulary form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.container .formulary form div{
+    margin-bottom: 1rem;
+}
+.container .formulary form div input{
+    height: 2.5rem;
+    width: 30%;
+    padding-left: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.container .formulary form div select{
+    height: 2.5rem;
+    padding-left: 1rem;
+    border-radius: 5px;
+    border:none;
+}
+
+.container .formulary form div .minor-input{
+    width: 20%;
+}
+
+.container .formulary form div select option{
+    height: 2.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem;
+
+}
+
+
+.container .formulary form div.send-message .send-message-input{
+    height: 10rem;
+    width: 62%;
+    padding: 6px 10px;
+   
+}
+
+.container .formulary form .checkedInputArea .check{
+    width: 14px;
+    height: 14px;
+}
+
+.container .formulary form button{
+    height: 2.5rem;
+    width: 20%;
+    margin-bottom: 2rem;
+    border-radius: 50px;
+    background: #ff6600;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container .formulary  form button:hover {
+   transform: scale(1.050);
+}
+
+
+
+.container .formulary form .InputFileArea input[type="file"] {
+
+  
+    display: none;
+    
+  }
+
+  .container .formulary form .InputFileArea div{
+  
+    height: 8rem;
+  
+    align-items: center;
+  }
+
+.container .formulary form .InputFileArea div .btnPerson {
+  
+    text-align: center;
+    background: #fff;
+    height: 100%;
+    width: 61%;
+    margin-left: 19.5%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    padding-top: .5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+
+@media screen and (max-device-width: 1120px){
+   .container .formulary form div{
+        display: flex;
+        width: 100%;
+        flex-direction: column;  
+    }
+
+    .container .formulary form div input{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .container .formulary form div .minor-input{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .container .formulary form div .minor-input option{
+        width: 50%;
+        margin-top: 1rem;
+    }
+
+    .container .formulary form .InputFileArea div .btnPerson{
+        width: 100%;
+        margin: 0;
+    }
+
+    .container .formulary form button{
+        width: 100%;
+    }
+
+    .container .formulary form div.send-message .send-message-input{
+        width: 100%;
+    }
+
+    .container .formulary form .checkedInputArea{
+        display: flex;
+        width: 100%;
+     
+        align-items: center;
+    }
+}
